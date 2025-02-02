@@ -112,7 +112,7 @@ const handleKeyUp = (event) => {
     activeKeys.delete(key)
     const selectedSynth = synthRefs.value[selectedTrack.value - 1]
     if (selectedSynth) {
-      selectedSynth.releaseNote()
+      selectedSynth.releaseNote(note)
     }
   }
 }
